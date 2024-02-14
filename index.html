@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <audio autoplay src="./audio/Surf Mesa - ily (i love you baby) (feat. Emilee) (Official Audio).mp3" id="song" loop="loop"></audio>
+    
+    <!-- html -->
+    <!-- <div> -->
+    <div class="container2">
+      <div class="content">
+        <canvas id="universe"></canvas>
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="title">
+      <!-- EDIT HERE -->
+      <h3 class="STARDUST1">14/02/2024</h3>
+      <h1 class="STARDUST2">Huy Nhân &amp; Minh Hằng</h1>
+      <h3 class="STARDUST3">L O V E <strong>❤</strong> Y O U</h3>
+      <img class="img" src="./images/IMG_1707881703040_1707881707953.jpg" alt="JUNO_OKYO" />
+      <canvas id="pinkboard"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/universe.js"></script>
+    <script>
+        function clickBody() {
+          var x = document.getElementById("song"); 
+          x.play(); 
+        }
+        document.body.addEventListener("click", clickBody)
+    </script>
+  </body>
+</html>
